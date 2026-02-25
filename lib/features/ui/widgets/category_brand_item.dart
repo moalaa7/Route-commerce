@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_commerce_app/core/utils/app_colors.dart';
-import 'package:e_commerce_app/domain/entities/response/category.dart';
+import 'package:route_commerce/core/utils/app_colors.dart';
+import 'package:route_commerce/domain/entities/response/category.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

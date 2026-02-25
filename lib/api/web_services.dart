@@ -5,6 +5,9 @@ import 'package:retrofit/retrofit.dart';
 
 import 'model/request/login_request_dto.dart';
 import 'model/request/register_request_dto.dart';
+import 'model/response/brands/brand_response_dto.dart';
+import 'model/response/category/category_response_dto.dart';
+import 'model/response/product/product_response_dto.dart';
 part 'web_services.g.dart';
 
 @RestApi()
@@ -17,4 +20,12 @@ abstract class WebServices {
   @POST(ApiEndPoints.registerApi)
   Future<AuthResponseDto> register(@Body() RegisterRequestDto registerRequest);
 
+  @GET(ApiEndPoints.categoriesApi)
+  Future<CategoryResponseDto> getAllCategories();
+
+  @GET(ApiEndPoints.brandsApi)
+  Future<BrandResponseDto> getAllBrands();
+
+  @GET(ApiEndPoints.productsApi)
+  Future<ProductResponseDto> getAllProducts();
 }
